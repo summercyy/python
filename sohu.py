@@ -107,7 +107,7 @@ with open(filepath+filename, 'w') as writing:
 #递归检测
 while not(to_visit_url.empty()):
 	url = to_visit_url.get()
-	print(url)
+	#print(url)
 	check_thread = Check(url) #使用线程
 	check_thread.run()
 
